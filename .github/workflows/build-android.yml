@@ -28,10 +28,9 @@ jobs:
           EXPO_NO_DOTENV: '1'
       - name: Fix Gradle version
         run: |
-          cat android/gradle/wrapper/gradle-wrapper.properties
           sed -i 's|gradle-8\.[0-9]*\.[0-9]*-all|gradle-8.3-all|g' android/gradle/wrapper/gradle-wrapper.properties
           sed -i 's|gradle-8\.[0-9]*-all|gradle-8.3-all|g' android/gradle/wrapper/gradle-wrapper.properties
-          cat android/gradle/wrapper/gradle-wrapper.properties
+          sed -i 's/com.android.tools.build:gradle:[0-9.]*/com.android.tools.build:gradle:8.1.0/g' android/build.gradle
       - name: Build APK
         run: |
           cd android

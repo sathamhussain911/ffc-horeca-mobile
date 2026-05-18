@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "FFC HORECA",
+    "slug": "ffc-horeca-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B5E20"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B5E20"
+      },
+      "package": "com.freshfruits.horeca",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow FFC HORECA to use the camera for EID scanning."
+        }
+      ]
+    ],
+    "scheme": "ffc-horeca",
+    "extra": {
+      "eas": {
+        "projectId": "1f2c4e0b-dd7a-42b2-85bd-b56342175e77"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Prebuild Android
-        run: npx expo prebuild --platform android --clean
+        run: ./node_modules/.bin/expo prebuild --platform android --clean
         env:
           EXPO_NO_DOTENV: 1
 

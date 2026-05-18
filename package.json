@@ -4,8 +4,9 @@
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "build:android": "eas build --platform android --profile preview"
+    "android": "expo run:android",
+    "build:android": "eas build --platform android --profile preview",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "expo": "51.0.28",
